@@ -5,3 +5,5 @@ toggle.onclick = function(){
     toggle.classList.toggle('active');
     contMedio.classList.toggle('active');
 }
+
+

@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
 
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
-                                    /*HEADER*/
-header{
+
+/*HEADER*/
+header {
     background-color: #0a141d;
     height: 130px;
     position: fixed;
@@ -16,7 +17,7 @@ header{
 
 }
 
-.navBar{
+.navBar {
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -28,24 +29,24 @@ ul {
     padding: 0;
 }
 
-.nav-menu-item a{
+.nav-menu-item a {
     text-decoration: none;
     color: white;
     line-height: 130px;
 }
 
-.navBar .left .nav-menu-item p{
+.navBar .left .nav-menu-item p {
     /* text-decoration: none; */
     color: white;
     line-height: 130px;
 }
 
-.left{
+.left {
     display: flex;
     align-items: center;
 }
 
-.left li{
+.left li {
     margin-right: 10px;
 }
 
@@ -59,34 +60,82 @@ ul {
     margin-right: 30px;
 }
 
-                                                /* MAIN */
+/* body{
+    background-color: lightgray;
+} */
 
-.contenedor-superior{
+#button-container{
+    background-color: #f8f8f8;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #fff;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: linear-gradient(145deg,#D8D8D8,#FFFFFF);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4,
+                -3px -3px 8px #fff
+
+}
+
+#button-container.active .toggle{
+    left: 40px;
+}
+
+.contenedor-medio{
+    background-color: rgb(23, 23, 23);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+.contenedor-superior {
     width: 100%;
     height: 1150px;
     background-image: url(../assert/fondo-claro.jpg);
     background-size: cover;
     background-position: center;
-    
+
 }
 
-.contenedor-superior .sec1{
+.contenedor-superior .sec1 {
     width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contenedor-superior h1{
+.contenedor-superior h1 {
     text-align: center;
     align-items: center;
     padding-top: 200px;
     color: #fff;
-    font-family: 'Carrois Gothic SC', sans-serif; 
+    font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 80px;
     ;
 }
 
-.contenedor-superior h2{
+.contenedor-superior h2 {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -94,7 +143,7 @@ ul {
     font-size: 35px;
 }
 
-.contenedor-superior p{
+.contenedor-superior p {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -102,7 +151,7 @@ ul {
     font-size: 35px;
 }
 
-.contenedor-superior .sec2 h3{
+.contenedor-superior .sec2 h3 {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -111,39 +160,41 @@ ul {
     padding-top: 250px;
 }
 
-.contenedor-superior .sec2 .imagenes-sec2{
+.contenedor-superior .sec2 .imagenes-sec2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contenedor-superior .sec2 .imagenes-sec2 .image1{
+.contenedor-superior .sec2 .imagenes-sec2 .image1 {
     margin-right: 50px;
-    
+
 }
 
-.contenedor-superior .sec2 .imagenes-sec2 .image2{
+.contenedor-superior .sec2 .imagenes-sec2 .image2 {
     margin-left: 50px;
 }
 
-.contenedor-medio{
+.contenedor-medio {
     width: 100%;
     height: 1500px;
     background-color: lightgray;
-    
+
 }
 
-.contenedor-medio .primer-row{
+
+
+.contenedor-medio .primer-row {
     display: flex;
 
 }
 
-.contenedor-medio .primer-row .sec3{
+.contenedor-medio .primer-row .sec3 {
     width: 50%;
     margin-bottom: 100px;
 }
 
-.contenedor-medio .primer-row .sec3 h3{
+.contenedor-medio .primer-row .sec3 h3 {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -152,7 +203,7 @@ ul {
     padding-top: 100px;
 }
 
-.contenedor-medio .primer-row .sec3 p{
+.contenedor-medio .primer-row .sec3 p {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -160,14 +211,14 @@ ul {
     font-size: 25px;
     padding-top: 10px;
     padding-left: 120px;
-    padding-right:120px;
+    padding-right: 120px;
 }
 
-.contenedor-medio .primer-row .image3{
+.contenedor-medio .primer-row .image3 {
     width: 50%;
 }
 
-.contenedor-medio .primer-row .image3 img{
+.contenedor-medio .primer-row .image3 img {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -176,16 +227,16 @@ ul {
     margin-right: auto;
 }
 
-.contenedor-medio .segundo-row{
+.contenedor-medio .segundo-row {
     display: flex;
 }
 
-.contenedor-medio .segundo-row .sec4{
+.contenedor-medio .segundo-row .sec4 {
     width: 50%;
     margin-bottom: 100px;
 }
 
-.contenedor-medio .segundo-row .sec4 h3{
+.contenedor-medio .segundo-row .sec4 h3 {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -194,7 +245,7 @@ ul {
     padding-top: 100px;
 }
 
-.contenedor-medio .segundo-row .sec4 p{
+.contenedor-medio .segundo-row .sec4 p {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -202,14 +253,14 @@ ul {
     font-size: 25px;
     padding-top: 10px;
     padding-left: 120px;
-    padding-right:120px;
+    padding-right: 120px;
 }
 
-.contenedor-medio .segundo-row .image4{
+.contenedor-medio .segundo-row .image4 {
     width: 50%;
 }
 
-.contenedor-medio .segundo-row .image4 img{
+.contenedor-medio .segundo-row .image4 img {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -218,7 +269,7 @@ ul {
     margin-right: auto;
 }
 
-.contenedor-medio .col h2{
+.contenedor-medio .col h2 {
     text-align: center;
     align-items: center;
     font-family: sans-serif;
@@ -226,66 +277,113 @@ ul {
     font-size: 50px;
 }
 
-.contenedor-medio .col .boton-inf{
+.contenedor-medio .col .boton-inf {
     text-align: center;
     align-items: center;
     padding-top: 100px;
 }
 
-                                    /* REGISTER */
+/* REGISTER */
 
-.contenedor-reg{
+.contenedor-reg {
     width: 100%;
-    height: 950px;
+    height: 1150px;
     background-color: lightgray;
 }
 
-.contenedor-reg .row{
-    padding-top: 30px;
-    width: 500px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.formulario {
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    margin-top: 100px;
+    border-radius: 7px;
 }
 
-.contenedor-reg .row .form-floating{
-    padding-top: 50px;
+.formulario h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
-.contenedor-reg .text-sup{
+.formulario form {
+
+}
+
+.formulario input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+}
+
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 7px;
+    font-size: 17px;
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    border: none;
+    border-radius: 7px;
+}
+
+.formulario label {
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+input[type="submit"] {
+    background: #8bd3dd;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.contenedor-reg .text-sup {
     padding-top: 200px;
 }
 
-.contenedor-reg .text-sup h1{
+.contenedor-reg .text-sup h1 {
     text-align: center;
     align-items: center;
     color: #fff;
-    font-family: 'Carrois Gothic SC', sans-serif; 
+    font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 40px;
 }
 
-.contenedor-reg .text-sup h2{
+.contenedor-reg .text-sup h2 {
     text-align: center;
     align-items: center;
     color: #fff;
-    font-family: 'Carrois Gothic SC', sans-serif; 
+    font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 20px;
 }
 
-.contenedor-reg .text-sup h3{
+.contenedor-reg .text-sup h3 {
     text-align: center;
     align-items: center;
     padding-top: 20px;
     color: goldenrod;
-    font-family: 'Carrois Gothic SC', sans-serif; 
+    font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 20px;
 }
 
-.contenedor-reg .text-sup p{
+.contenedor-reg .text-sup p {
     text-align: center;
     align-items: center;
     color: #fff;
-    font-family: 'Carrois Gothic SC', sans-serif; 
+    font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 20px;
 }
 
@@ -293,23 +391,23 @@ ul {
 
 
 
-                                            /* FOOTER */
-.pie-pagina{
+/* FOOTER */
+.pie-pagina {
     width: 100%;
-    background-color: #0a141d;    
+    background-color: #0a141d;
 }
 
-.pie-pagina .grupo-1{
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
     padding: 45px 0px;
 }
 
-.pie-pagina .grupo-1 .box figure{
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
@@ -318,25 +416,25 @@ ul {
 
 }
 
-.pie-pagina .grupo-1 .box figure img{
+.pie-pagina .grupo-1 .box figure img {
     width: 250px;
 
 }
 
 
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina .grupo-1 .box h2 {
     color: white;
     margin-bottom: 20px;
     font-size: 30px;
     padding-top: 65px;
 }
 
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
 
-.pie-pagina .grupo-1 .red-social a{
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -350,11 +448,11 @@ ul {
     margin-bottom: 30px;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover{
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
 
-.pie-pagina .grupo-2{
+.pie-pagina .grupo-2 {
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
@@ -362,14 +460,11 @@ ul {
 
 }
 
-.pie-pagina .grupo-2 small{
+.pie-pagina .grupo-2 small {
     font-size: 15px;
 }
 
 
-.pie-pagina .grupo-1 .box .mapa{
+.pie-pagina .grupo-1 .box .mapa {
     margin-top: 50px;
 }
-
-
-

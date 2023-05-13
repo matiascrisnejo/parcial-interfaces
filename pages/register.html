@@ -14,12 +14,13 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav class="navBar">
             <ul class="left">
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link">Seguinos en </a>
+                    <a href="../index.html" class="nav-menu-link">Seguinos en </a>
                 </li>
                 <li class="nav-menu-item">
                     <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i>
@@ -28,10 +29,12 @@
                     <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"
+                            style="color: #ffffff;"></i></a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+                    <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin-in"
+                            style="color: #ffffff;"></i></a>
                 </li>
             </ul>
             <ul class="right">
@@ -58,28 +61,28 @@
                 <h3>DETALLES DEL EVENTO</h3>
                 <p>Jueves 13 de mayo, 12:00 p. m. PT (3:00 p. m. ET)</p>
             </div>
-            <form class="row g-3" action="https://formsubmit.co/crisnejomatias@gmail.com" method="post">
-                <div class="col-12" >
-                    <label for="inputNombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputNombre" placeholder="Escribe tu nombre">
-                </div>
-                <div class="col-12">
-                    <label for="inputApellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="inputApellido" placeholder="Escribe tu apellido">
-                </div>
-                <div class="col-12">
-                    <label for="emailInput" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email">
-                </div>
-                <div class="form-floating">
-                    <label for="floatingTextarea" >Mensaje</label>
-                    <textarea  class="form-control" placeholder="Escriba su mensaje" id="floatingTextarea"></textarea>
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
+            <div class="formulario">
+                <form action="mailto:gabriel.molina@unahur.edu.ar" method="post" class="form">
+                    <h2>Registro</h2>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+
+                    <label for="apeliido">Apellido</label>
+                    <input type="text" name="apeliido" id="apellido" placeholder="Ingrese su Apellido" required>
+
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="@" required>
+
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su Mensaje"></textarea required>
+                
+
+                <input type="submit" >
             </form>
-        </div>
+            </div>
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
